@@ -1,7 +1,7 @@
 #include "Core/Application.h"
 
 int main() {
-    Application app;
+    RealEngine::Application app;
     app.Run();
     return 0;
 }

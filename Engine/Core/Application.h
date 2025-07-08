@@ -1,6 +1,21 @@
 #pragma once
 
-class Application {
-public:
-    void Run();
-};
+#include <memory>
+
+namespace RealEngine {
+
+    class Window;
+
+    class Application {
+    public:
+        Application();
+        ~Application();
+
+        void Run();
+        void Init();
+
+    private:
+        std::unique_ptr<Window> m_Window;
+    };
+
+}
