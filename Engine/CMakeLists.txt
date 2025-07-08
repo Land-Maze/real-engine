@@ -4,7 +4,7 @@ target_sources(Engine
     PRIVATE
         Core/Application.cpp
         Core/Application.h
- "Core/Window.h" "Core/Window.cpp")
+ "Core/Window.h" "Core/Window.cpp" "Renderer/Renderer.h" "Renderer/Renderer.cpp")
 
 target_include_directories(Engine
     PUBLIC

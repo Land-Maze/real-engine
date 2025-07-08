@@ -3,6 +3,7 @@
 #include <glad/glad.h>
 #include <iostream>
 #include <GLFW/glfw3.h>
+#include <Renderer/Renderer.h>
 
 namespace RealEngine {
 
@@ -14,7 +15,10 @@ namespace RealEngine {
     Application::~Application() {}
 
     void Application::Run() {
+        RealEngine::Renderer renderer;
+
         while (!m_Window->ShouldClose()) {
+            renderer.Draw();
             m_Window->OnUpdate();
         }
     }
